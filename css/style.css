@@ -1,0 +1,158 @@
+:root {
+    --white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh cover;
+    background-attachment: fixed;
+
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+}
+
+header .title {
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+main {
+    text-align: center;
+    position: relative;
+} 
+
+/* Choice */
+.choice_content .choice_title {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.choice_content .option_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.choice_content .option_container img {
+    width: 70px;
+    padding: 15px;
+}
+
+.choice_content .option_container figure {
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0px 0px 5px #FFFFFF;
+    transition: all .2s ease-in-out;
+}
+
+.choice_content .option_container figure:hover {
+    box-shadow: 0px 0px 10px #FFFFFF;
+}
+
+/* Counter */
+.counter_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+    color: var(--white);
+    background: rgb(0,128,255);
+    background: linear-gradient(-45deg, rgba(0,128,255,1) 0%, rgba(226,16,134,1) 100%);
+}
+
+.counter_content div p {
+    font-size: 1.4rem;
+}
+
+.counter_content div .points {
+    font-size: 2.4rem;
+    margin: 10px 0;
+}
+
+.counter_content .vs {
+    font-size: 3rem;
+    margin: 0 30px;
+}
+
+/* Button */
+.rst_bnt {
+    font-size: 1.4rem;
+    margin-top: 50px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    color: #343434;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.rst_bnt:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Pop up */
+section.popup_show {
+    transform: scale(1);
+}
+
+.popup_content {
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: calc(50% - 150px);
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 550px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: all .3s ease-in-out;
+}
+
+.popup_content p {
+    font-size: 1.4rem;
+}
+
+.popup_content .user {
+    margin-bottom: 10px;
+}
+
+.popup_content img {
+    width: 70px;
+    padding: 15px;
+}
+
+.popup_content div figure {
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #3CE900;
+}
+
+/* Footer */
+footer p {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-top: 70px;
+    margin-left: 20px;
+}

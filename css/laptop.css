@@ -1,0 +1,25 @@
+.choice_content .option_container {
+    gap: 50px;
+}
+
+.choice_content .option_container img {
+    width: 130px;
+    padding: 30px;
+}
+
+/* Pop up */
+.popup_content {
+    position: absolute;
+    gap: 50px;
+    left: calc(50% - 270px);
+}
+
+.popup_content img {
+    width: 130px;
+    padding: 30px;
+}
+
+/* Footer */
+footer p {
+    margin-top: 20px;
+}

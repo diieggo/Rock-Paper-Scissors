@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop.css" media="(min-width: 850px)">
     <title>Rock, Paper, Scissors</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <div class="choice_content">
+            <h2 class="choice_title">Make your choice</h2>
+            <div class="option_container">
+                <figure>
+                    <img src="./img/rock_emoji.png" alt="Rock">
+                </figure>
+                <figure>
+                    <img src="./img/roll-of-paper_emoji.png" alt="Paper">
+                </figure>
+                <figure>
+                    <img src="./img/scissors_emoji.png" alt="Scissors">
+                </figure>
+            </div>
+        </div>
+        <div class="counter_content">
+            <div>
+                <p>Player</p>
+                <p class="player_points points">0</p>
+            </div>
+            <p class="vs">VS</p>
+            <div>
+                <p>CPU</p>
+                <p class="cpu_points points">0</p>
+            </div>
+        </div>
+        <button class="rst_bnt">Restart game</button>
+
+        <!-- Pop up -->
+        <section class="popup_content">
+            <div>
+                <p class="user">Player</p>
+                <figure>
+                    <img class="player_option option" src="img/rock_emoji.png" alt="Option"></img>
+                </picture>
+            </div>
+            <div>
+                <p>You Win</p>
+                <img src="img/cat-with-wry-smile_emoji.png" alt="Cat with wry smile emoji">
+                <p class="vs">VS</p>
+            </div>
+            <div>
+                <p class="user">CPU</p>
+                <figure>
+                    <img class="cpu_option option" src="img/scissors_emoji.png" alt="Option"></img>
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Code by Diego Huaccha Diestra</p>
+    </footer>
 </body>
 </html>
