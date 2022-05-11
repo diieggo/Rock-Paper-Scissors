@@ -1,6 +1,6 @@
 // Score
-var playerScore = 0;
-var cpuScore = 0;
+let playerScore = 0;
+let cpuScore = 0;
 var playerPoints = document.querySelector(".player_points");
 var cpuPoints = document.querySelector(".cpu_points");
 // Player options
@@ -93,6 +93,8 @@ close_btn.addEventListener('click', ()=> {
 rstBtn.addEventListener('click', ()=> {
     playerPoints.innerHTML = 0;
     cpuPoints.innerHTML = 0;
+    playerScore = 0;
+    cpuScore = 0;
 });
 
 main();
