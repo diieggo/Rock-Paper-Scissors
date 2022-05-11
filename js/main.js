@@ -33,7 +33,7 @@ function win() {
     gameResult.innerHTML = "You Win";
     playerPoints.innerHTML = playerScore;
     cpuPoints.innerHTML = cpuScore;
-    gameImg.src = "../img/cat-with-wry-smile_emoji.png";
+    gameImg.src = "img/cat-with-wry-smile_emoji.png";
 }
 
 function lost() {
@@ -49,7 +49,7 @@ function draw() {
     playerBorderResult.style.borderColor = "#3CE900";
     cpuBorderResult.style.borderColor = "#3CE900";
     gameResult.innerHTML = "It's a Draw";
-    gameImg.src = "../img/grinning-cat_emoji.png";
+    gameImg.src = "img/grinning-cat_emoji.png";
 }
 
 function play(playerOption) {
