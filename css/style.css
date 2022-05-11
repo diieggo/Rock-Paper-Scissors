@@ -92,7 +92,7 @@ main {
 }
 
 /* Button */
-.rst_bnt {
+.rst_btn {
     font-size: 1.4rem;
     margin-top: 50px;
     background-color: var(--white);
@@ -104,7 +104,7 @@ main {
     transition: all .2s ease-in-out;
 }
 
-.rst_bnt:hover {
+.rst_btn:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -118,8 +118,6 @@ section.popup_show {
     position: absolute;
     top: 0;
     left: calc(50% - 150px);
-    display: flex;
-    gap: 16px;
     justify-content: center;
     align-items: center;
     min-width: 300px;
@@ -128,6 +126,21 @@ section.popup_show {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.95);
     transition: all .3s ease-in-out;
+}
+
+.popup_container {
+    position: relative;
+    display: flex;
+    gap: 16px;
+}
+
+.popup_container .close_btn {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    padding: 5px;
+    color: #343434;
+    cursor: pointer;
 }
 
 .popup_content p {
@@ -146,7 +159,6 @@ section.popup_show {
 .popup_content div figure {
     border-radius: 50%;
     border: 2px solid;
-    border-color: #3CE900;
 }
 
 /* Footer */

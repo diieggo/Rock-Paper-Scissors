@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/laptop.css" media="(min-width: 850px)">
+    <link rel="shortcut icon" href="img/rock_emoji.png" type="image/x-icon">
     <title>Rock, Paper, Scissors</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +21,13 @@
         <div class="choice_content">
             <h2 class="choice_title">Make your choice</h2>
             <div class="option_container">
-                <figure>
+                <figure class="rock">
                     <img src="./img/rock_emoji.png" alt="Rock">
                 </figure>
-                <figure>
+                <figure class="paper">
                     <img src="./img/roll-of-paper_emoji.png" alt="Paper">
                 </figure>
-                <figure>
+                <figure class="scissors">
                     <img src="./img/scissors_emoji.png" alt="Scissors">
                 </figure>
             </div>
@@ -34,39 +35,44 @@
         <div class="counter_content">
             <div>
                 <p>Player</p>
-                <p class="player_points points">0</p>
+                <p class="player_points">0</p>
             </div>
             <p class="vs">VS</p>
             <div>
                 <p>CPU</p>
-                <p class="cpu_points points">0</p>
+                <p class="cpu_points">0</p>
             </div>
         </div>
-        <button class="rst_bnt">Restart game</button>
+        <button class="rst_btn">Restart game</button>
 
         <!-- Pop up -->
         <section class="popup_content">
-            <div>
-                <p class="user">Player</p>
-                <figure>
-                    <img class="player_option option" src="img/rock_emoji.png" alt="Option"></img>
-                </picture>
-            </div>
-            <div>
-                <p>You Win</p>
-                <img src="img/cat-with-wry-smile_emoji.png" alt="Cat with wry smile emoji">
-                <p class="vs">VS</p>
-            </div>
-            <div>
-                <p class="user">CPU</p>
-                <figure>
-                    <img class="cpu_option option" src="img/scissors_emoji.png" alt="Option"></img>
-                </picture>
+            <div class="popup_container">
+                <p class="close_btn">x</p>
+                <div class="player_result">
+                    <p class="user">Player</p>
+                    <figure class="player_border_result">
+                        <img class="player_option option" src="img/rock_emoji.png" alt="Option"></img>
+                    </figure>
+                </div>
+                <div>
+                    <p class="game_result"></p>
+                    <img class="game_img" src="img/cat-with-wry-smile_emoji.png" alt="Cat with wry smile emoji">
+                    <p class="vs">VS</p>
+                </div>
+                <div class="cpu_result">
+                    <p class="user">CPU</p>
+                    <figure class="cpu_border_result">
+                        <img class="cpu_option option" src="img/scissors_emoji.png" alt="Option"></img>
+                    </figure>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <p>Code by Diego Huaccha Diestra</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

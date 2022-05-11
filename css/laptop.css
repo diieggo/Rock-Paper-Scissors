@@ -10,8 +10,11 @@
 /* Pop up */
 .popup_content {
     position: absolute;
-    gap: 50px;
     left: calc(50% - 270px);
+}
+
+.popup_container {
+    gap: 50px;
 }
 
 .popup_content img {
