@@ -166,5 +166,15 @@ footer p {
     font-size: 1.2rem;
     color: var(--white);
     margin-top: 70px;
+    margin-bottom: 20px;
     margin-left: 20px;
+}
+
+footer p a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
